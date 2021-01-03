@@ -1,5 +1,5 @@
 {
-  "name": "tirhal-travel-site-exercise",
+  "name": "travel-site",
   "version": "1.0.0",
   "dependencies": {
     "jquery": "3.2.1",
@@ -10,13 +10,13 @@
     "waypoints": "4.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.1.0",
+    "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
     "babel-preset-es2015": "6.24.1",
     "browser-sync": "2.18.13",
     "del": "3.0.0",
-    "gulp": "^4.0.2",
+    "gulp": "3.9.1",
     "gulp-cssnano": "2.1.2",
     "gulp-imagemin": "4.0.0",
     "gulp-modernizr": "1.0.0-alpha",
