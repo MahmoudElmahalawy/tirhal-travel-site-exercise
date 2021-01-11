@@ -1,16 +1,39 @@
 .btn{
     background-color: $mainBlue;
+    /* border-radius: 20px;
+    border: 5px solid red; */
     color: #FFF;
     text-decoration: none;
     padding: 0.75rem 1.2rem;
     display: inline-block;
+    box-shadow: 0 40px 100px -20px rgba(0,0,0,0.5);
 
     &--orange{
         background-color: $mainOrange;
     }
 
     &--large{
-        font-size: 1.25rem;
+        /* font-size: 1.25rem; */
         padding: 1.1rem 1.9rem;
+
+        @mixin atSmall{
+            font-size: 1.25rem;
+        }
+
+    }
+}
+
+.btn:hover{
+    animation: riseAndShadow 0.25s ease forwards 0.1s;
+}
+
+@keyframes riseAndShadow{
+    5%{
+        box-shadow: 0 30px 70px -30px rgba(0,0,0,0.4);
+
+    }
+    100%{
+        transform: scale(1.019) translateY(-2px);
+        box-shadow: 0 40px 100px -20px rgba(0,0,10,0.2), 0 30px 70px -30px rgba(0,0,0,0.4);
     }
 }
