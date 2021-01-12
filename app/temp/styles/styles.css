@@ -493,7 +493,7 @@ a{
     }
 
 .large-hero__title{
-        font-weight: 300;
+        font-weight: 400;
         color: #003f5a;
         font-size: 2.4rem;
         margin: 0;
@@ -559,6 +559,22 @@ a{
 .page-section--blue{
         background-color: #003f5a;
         color: #FFF;
+    }
+
+.page-section--testimonials{
+        background-color: #e0e6ef;
+    }
+
+@media (min-width: 1080px){
+
+.page-section--testimonials{
+        background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+        background-size: cover
+    }
+    }
+
+.page-section--border-top-orange{
+        border-top: 10px solid #fea02f;
     }
 
 .btn{
@@ -665,6 +681,10 @@ a{
         margin-bottom: 1rem;
     }
 
+.row--t-padding{
+        padding-top: 80px;
+    }
+
 @media (min-width: 800px){
 
         .row__b-margin-until-medium{
@@ -696,6 +716,37 @@ a{
         }
     }
 
+@media (min-width: 1080px){
+
+        .row__b-margin-until-large{
+            margin-bottom: 0;
+        }    
+
+        .row__large-4{
+            float: left;
+            width: 33.33%;
+        }
+    
+
+        .row__large-4--larger{
+            width: 37%;
+        }
+    
+        .row__large-6{
+            float: left;
+            width: 50%;
+        }    
+
+        .row__large-8{
+            float: left;
+            width: 66.66%;
+        }    
+    
+        .row__large-8--smaller{
+            width: 63%;
+        }
+    }
+
 .row--gutters{
         margin-right: -65px;
     }
@@ -711,6 +762,22 @@ a{
 .row--gutters-large > div{
         padding-right: 100px;
     }
+
+@media (min-width: 1080px){
+
+.row--equal-height-at-large{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+    }
+    }
+
+.row--equal-height-at-large > div{
+            float: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
 
 .headline{
     font-weight: 300;
@@ -811,6 +878,8 @@ a{
 @media (min-width: 530px){
 
 .section-title__icon{
+            position: relative;
+            top: 8px;
             display: inline-block;
             margin-right: 0.5rem;
             margin-left: 0;
@@ -819,19 +888,107 @@ a{
     }
     }
 
+.section-title--blue{
+        color: #003f5a;
+    }
+
 .feature-item{
     position: relative;
-    padding-left: 94px;
     padding-bottom: 2.25rem;
 }
 
+@media (min-width: 530px){
+
+.feature-item{
+        padding-left: 94px
+}
+    }
+
 .feature-item__icon{
-        position: absolute;
-        left: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+@media (min-width: 530px){
+
+.feature-item__icon{
+            position: absolute;
+            left: 0
+    }
     }
 
 .feature-item__title{
-        font-size: 1.875rem;
+        font-size: 1.6rem;
         font-weight: 300;
         margin-bottom: 0.875rem;
+        margin-top: 0.7em;
+        text-align: center;
+    }
+
+@media (min-width: 530px){
+
+.feature-item__title{
+            font-size: 1.875rem;
+            margin-top: 1em;
+            text-align: left
+    }
+    }
+
+.testimonial{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 0.5rem 1px 0.5rem;
+    margin-bottom: 98px;
+}
+
+@media (min-width: 800px){
+
+.testimonial{
+        width: 100vw
+}
+    }
+
+@media (min-width: 530px){
+
+.testimonial{
+        width: 100vw
+}
+    }
+
+@media (min-width: 1080px){
+
+.testimonial{
+        margin-bottom: 0;
+        padding: 0 1.875rem 1px 1.875rem
+}
+    }
+
+.testimonial__photo{
+        border: 6px solid rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        overflow: hidden;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto -80px auto;
+        position: relative;
+        top: -80px;
+    }
+
+.testimonial__title{
+        color: #003f5a;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+.testimonial__subtitle{
+        color: #fea02f;
+        text-align: center;
+        font-weight: 400;
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+    }
+
+.testimonial--last{
+        margin-bottom: 0;
     }
