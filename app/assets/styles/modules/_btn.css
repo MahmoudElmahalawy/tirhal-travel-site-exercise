@@ -6,7 +6,6 @@
     text-decoration: none;
     padding: 0.75rem 1.2rem;
     display: inline-block;
-    box-shadow: 0 40px 100px -20px rgba(0,0,0,0.5);
 
     &--orange{
         background-color: $mainOrange;
@@ -24,16 +23,19 @@
 }
 
 .btn:hover{
-    animation: riseAndShadow 0.25s ease forwards 0.1s;
+    /* animation: riseAndShadow 0.25s ease forwards 0.1s; */
+    box-shadow: 0 40px 100px -20px rgba(0,0,0,0.5);
+    transition: box-shadow 0.5s ease-out forwards;
+
 }
 
-@keyframes riseAndShadow{
-    5%{
-        box-shadow: 0 30px 70px -30px rgba(0,0,0,0.4);
+/* @keyframes riseAndShadow{
+    0%{
+        box-shadow: 0 40px 100px -20px rgba(0,0,0,0.5);
 
     }
     100%{
-        transform: scale(1.019) translateY(-2px);
-        box-shadow: 0 40px 100px -20px rgba(0,0,10,0.2), 0 30px 70px -30px rgba(0,0,0,0.4);
+        transform: scale(1.03) translateY(-2px);
+        box-shadow: 0 60px 150px -20px rgba(0,0,10,0.5);
     }
-}
+} */

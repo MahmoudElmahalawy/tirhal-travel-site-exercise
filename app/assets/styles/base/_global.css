@@ -18,4 +18,5 @@ img{
 
 a{
     color: $mainOrange;
+    text-decoration: none;
 }
