@@ -1,5 +1,5 @@
-import jQuery from "jquery";
-window.$ = window.jQuery = jQuery;
+import $ from "jquery";
+// window.$ = window.jQuery = jQuery;
 
 class MobileMenu{
     constructor(){

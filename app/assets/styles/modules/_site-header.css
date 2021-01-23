@@ -11,7 +11,16 @@
     @mixin atMedium{
         background-color: rgba(0, 63, 90, 0.4);
         backdrop-filter: blur(2px);
+        position: fixed;
+
+        &--dark{
+            background-color: rgba(0, 63, 95, 0.7);
+            backdrop-filter: blur(7px);
+            transition: all 0.25s ease-out;
+        }
+    
     }
+
 
     &--is-expanded{
         background-color: rgba(0, 63, 90, 0.4);
@@ -137,6 +146,7 @@
         top: 0;
         left: 50%;
         transform: translateX(-50%) scale(0.8);
+        transition: all 0.25s ease-out;
         transform-origin: top;
         /* border-bottom: 10px solid rgba(0, 63, 90, 0.4); */
         /* border-radius: 50%; */
@@ -147,6 +157,10 @@
         @mixin atMedium{
             left: auto;
             transform: translateX(0);
+
+            .site-header--dark & {
+                transform: scale(0.55);
+            }
         }
     }
 

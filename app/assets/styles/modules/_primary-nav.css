@@ -27,5 +27,9 @@
         font-weight: 300;
         display: block;
         padding: 12px 0;
+
+        &.is-current-link{
+            color: $mainOrange;
+        }
     }
 }
