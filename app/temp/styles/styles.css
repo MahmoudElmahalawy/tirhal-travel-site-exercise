@@ -1448,9 +1448,12 @@ a{
         padding: 14px 0;
         width: 33%;
         height: 72px;
-        top: 50%;
-        left: 50%;
+        /* top: 50%; */
+        /* left: 50%; */
+        position: relative;
     }
+
+/* text-align: center; */
 
 @media (min-width: 530px){
 
@@ -1459,3 +1462,12 @@ a{
             margin: 0 5px
     }
     }
+
+.social-icons__icon .icon {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+          }
